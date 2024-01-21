@@ -1,0 +1,31 @@
+# Module 20 Report 
+
+## Overview of the Analysis
+
+In this analysis, machine learning models were created in order to predict the credit risk among loan borrowers for a hypothetical bank. The models were trained on a data set containing the requested loan size, interest rate, borrower income, debt-to-income ratio, number of bank accounts, derogatory marks, total debt, and resulting loan status among actual loan borrowers. In turn, the models aimed to reliably predict the loan status based on all other available data for loan borrowers. 
+
+Here is an overview of the steps conducted for the machine learning models:
+* First, the data was split into training and testing sets
+* Next, a logistic regression model was fit to the training data to learn loan status outcomes 
+* Next, the logistic regression model was run on the testing data to predict loan status outcomes
+* The predictions were evaluated for accuracy and precision using a balanced accuracy score, confusion matrix, and classification report
+* This analysis was then conducted again using resampled data from the training data set
+* The predictions were again evaluaged for accuracy and precision, and compared to the prediction results from the original model
+
+
+
+## Results
+
+Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
+
+* Machine Learning Model 1:
+  * 100% precision, 100% recall for healthy loans
+  * 87% precision, 89% recall for high-risk loans
+  
+* Machine Learning Model 2:
+  * 100% precision, 100% recall for healthy loans
+  * 87% precision, 100% recall for high-risk loans
+
+## Summary
+
+The resampled machine learning model is the recommended model for predicting healthy and high-risk loans. This model correctly identifies 100% of high-risk individuals, thus protecting the bank from overpaying on unqualified loan candidates. However, this model also might over-estimate high-risk individuals, and might incorrectly characterize low-risk individuals as high risk. While a conservative loan strategy might be strategic for the bank, it also might cause the bank to lose business over time from qualified customers. This model should be worked on with additional resampled data to improve the precision for high-risk loans.
