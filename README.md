@@ -1,2 +1,2 @@
 # credit-risk-classification
-Repo for data bootcamp module 20 assignment
+Used Python, scikit-learn to create supervised logistic regression model to predict credit risk
